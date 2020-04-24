@@ -94,6 +94,7 @@ set( CUDA_NVCC_FLAGS_RELEASE ${CUDA_NVCC_FLAGS_RELEASE};
                              -gencode arch=compute_35,code=sm_35
                              -gencode arch=compute_20,code=sm_20
                              -gencode arch=compute_20,code=sm_50
+                             -gencode arch=compute_75,code=sm_75
                              )
 
 set( CUDA_NVCC_FLAGS_DEBUG ${CUDA_NVCC_FLAGS_DEBUG}; 
@@ -101,6 +102,7 @@ set( CUDA_NVCC_FLAGS_DEBUG ${CUDA_NVCC_FLAGS_DEBUG};
                              -gencode arch=compute_35,code=sm_35
                              -gencode arch=compute_20,code=sm_20
                              -gencode arch=compute_20,code=sm_50
+                             -gencode arch=compute_75,code=sm_75
                              )
                              
 include_directories( ${OPENGL_INCLUDE_DIR} )
